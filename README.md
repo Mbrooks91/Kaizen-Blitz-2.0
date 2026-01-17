@@ -11,11 +11,14 @@ A comprehensive desktop application for managing Kaizen Blitz (rapid improvement
 
 ### 🪟 Windows Users (No Python Required!)
 
-**Latest Release v1.0.1**: [Download KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe) (141 MB)
+**Latest Release v1.0.1**: [Download KaizenBlitz-v1.0.1-Windows.zip](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz-v1.0.1-Windows.zip) (95 MB)
 
-Simply download and double-click to run - no installation needed!
+**Installation:**
+1. Download and extract the ZIP file
+2. Run **KaizenBlitz.exe** from the extracted folder
+3. Keep all files together - the app needs the _internal folder
 
-**Note**: The executable includes all dependencies (PyQt6, ReportLab, SQLAlchemy, etc.), which is why it's larger than typical applications.
+**Note**: The application is portable and includes all dependencies (PyQt6, ReportLab, SQLAlchemy, etc.).
 
 ### 🐍 Python Package (All Platforms)
 
@@ -71,13 +74,16 @@ kaizen-blitz
 
 ### For Windows Users (Easiest Method)
 
-**No Python required!** Download the standalone executable:
+**No Python required!** Download the standalone application:
 
-1. **Download** [KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe)
-2. **Double-click** the downloaded file to run
-3. **Done!** The application will start immediately
+1. **Download** [KaizenBlitz-v1.0.1-Windows.zip](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz-v1.0.1-Windows.zip)
+2. **Extract** the ZIP file to a folder (e.g., C:\Program Files\KaizenBlitz)
+3. **Run** KaizenBlitz.exe from the extracted folder
+4. **Done!** The application will start immediately
 
-> Note: Windows may show a security warning for unsigned executables. Click "More info" → "Run anyway" to proceed.
+> **Important**: Keep all files in the KaizenBlitz folder together. The application needs the _internal folder to run properly.
+
+> **Security Note**: Windows may show a security warning for unsigned applications. Click "More info" → "Run anyway" to proceed.
 
 ### For Python Users (All Platforms)
 
