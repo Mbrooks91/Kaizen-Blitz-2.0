@@ -4,21 +4,21 @@ A comprehensive desktop application for managing Kaizen Blitz (rapid improvement
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.2-green.svg)
+![Version](https://img.shields.io/badge/version-1.0.3-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
 
 ## Download
 
 ### 🪟 Windows Users (No Python Required!)
 
-**Latest Release v1.0.2**: [Download KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.2/KaizenBlitz.exe) (105 MB)
+**Latest Release v1.0.3**: [Download KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.3/KaizenBlitz.exe) (27 MB)
 
 **Installation:**
 1. Download KaizenBlitz.exe
 2. Double-click to run
 3. If Windows shows a security warning, click "More info" → "Run anyway"
 
-**Note**: This is a standalone executable - no installation or additional files required!
+**✅ No DLL errors - Uses tkinter (built into Python)**
 
 ### 🐍 Python Package (All Platforms)
 
