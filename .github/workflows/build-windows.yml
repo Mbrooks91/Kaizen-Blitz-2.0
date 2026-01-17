@@ -27,7 +27,7 @@ jobs:
     
     - name: Build executable with PyInstaller
       run: |
-        pyinstaller --onefile --windowed --name=KaizenBlitz --icon=NONE --add-data "src;src" run.py
+        pyinstaller --onefile --windowed --name=KaizenBlitz --icon=NONE --add-data "src;src" --hidden-import=pkgutil --hidden-import=pkg_resources --hidden-import=PyQt6.sip --collect-all=PyQt6 --collect-all=reportlab --collect-all=docx --collect-all=openpyxl run.py
     
     - name: Upload artifact
       uses: actions/upload-artifact@v4
