@@ -4,21 +4,31 @@ A comprehensive desktop application for managing Kaizen Blitz (rapid improvement
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
+![Version](https://img.shields.io/badge/version-1.0.1-green.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
 
 ## Download
 
-📦 **Latest Release**: [Download Kaizen Blitz v1.0.0](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.0/kaizen_blitz-1.0.0-py3-none-any.whl)
+### 🪟 Windows Users (No Python Required!)
 
-**Installation from wheel:**
+**Latest Release v1.0.1**: [Download KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe) (22 MB)
+
+Simply download and double-click to run - no installation needed!
+
+### 🐍 Python Package (All Platforms)
+
+**Wheel Package**: [kaizen_blitz-1.0.0-py3-none-any.whl](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/kaizen_blitz-1.0.0-py3-none-any.whl)
+
 ```bash
 pip install kaizen_blitz-1.0.0-py3-none-any.whl
 kaizen-blitz
 ```
 
-**Alternative installation methods:**
-- **Source tarball**: [kaizen_blitz-1.0.0.tar.gz](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.0/kaizen_blitz-1.0.0.tar.gz)
+### 📦 Alternative Installation Methods
+
+- **Source tarball**: [kaizen_blitz-1.0.0.tar.gz](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/kaizen_blitz-1.0.0.tar.gz)
 - **From source**: See [Installation](#installation) section below
+- **All releases**: [View all releases](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases)
 
 ## Features
 
@@ -57,7 +67,19 @@ kaizen-blitz
 
 ## Installation
 
-### Prerequisites
+### For Windows Users (Easiest Method)
+
+**No Python required!** Download the standalone executable:
+
+1. **Download** [KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe)
+2. **Double-click** the downloaded file to run
+3. **Done!** The application will start immediately
+
+> Note: Windows may show a security warning for unsigned executables. Click "More info" → "Run anyway" to proceed.
+
+### For Python Users (All Platforms)
+
+#### Prerequisites
 
 - Python 3.10 or higher
 - pip (Python package installer)
@@ -227,6 +249,6 @@ For issues, questions, or suggestions:
 
 ---
 
-**Version**: 1.0.0  
+**Version**: 1.0.1  
 **Author**: Your Company  
 **Year**: 2026
