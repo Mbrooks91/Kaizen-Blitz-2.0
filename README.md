@@ -11,14 +11,14 @@ A comprehensive desktop application for managing Kaizen Blitz (rapid improvement
 
 ### 🪟 Windows Users (No Python Required!)
 
-**Latest Release v1.0.1**: [Download KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe) (98 MB)
+**Latest Release v1.0.1**: [Download KaizenBlitz-Windows.zip](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz-Windows.zip) (99 MB)
 
 **Installation:**
-1. Download **KaizenBlitz.exe**
-2. Double-click to run - that's it!
+1. Download and extract the ZIP file
+2. Run **KaizenBlitz.exe** from the extracted KaizenBlitz folder
 3. If Windows shows a security warning, click "More info" → "Run anyway"
 
-**Note**: Single-file executable with all dependencies embedded (PyQt6, ReportLab, SQLAlchemy, etc.). First run may take a few seconds.
+**Note**: Keep all files in the KaizenBlitz folder together. The _internal subfolder contains Qt libraries required to run.
 
 ### 🐍 Python Package (All Platforms)
 
@@ -74,13 +74,14 @@ kaizen-blitz
 
 ### For Windows Users (Easiest Method)
 
-**No Python required!** Download the standalone executable:
+**No Python required!** Download the standalone application:
 
-1. **Download** [KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe)
-2. **Double-click** to run - that's it!
-3. **Done!** The application will start immediately
+1. **Download** [KaizenBlitz-Windows.zip](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz-Windows.zip)
+2. **Extract** the ZIP to a folder (e.g., C:\KaizenBlitz)
+3. **Run** KaizenBlitz.exe from the extracted folder
+4. **Done!** The application will start immediately
 
-> **Note**: This is a single-file executable. First launch may take a few seconds as it extracts dependencies to a temporary folder.
+> **Important**: Keep all files in the KaizenBlitz folder together. The _internal subfolder contains Qt DLLs and dependencies needed to run.
 
 > **Security Note**: Windows may show a security warning for unsigned applications. Click "More info" → "Run anyway" to proceed.
 
