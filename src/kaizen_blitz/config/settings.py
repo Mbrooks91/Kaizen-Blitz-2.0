@@ -4,10 +4,12 @@ import os
 from pathlib import Path
 from typing import Optional
 
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
+# Optional: Load environment variables from .env file if available
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # dotenv not installed, use defaults
 
 
 class Settings:
