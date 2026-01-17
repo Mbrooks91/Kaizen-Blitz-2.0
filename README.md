@@ -11,9 +11,11 @@ A comprehensive desktop application for managing Kaizen Blitz (rapid improvement
 
 ### 🪟 Windows Users (No Python Required!)
 
-**Latest Release v1.0.1**: [Download KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe) (22 MB)
+**Latest Release v1.0.1**: [Download KaizenBlitz.exe](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.1/KaizenBlitz.exe) (141 MB)
 
 Simply download and double-click to run - no installation needed!
+
+**Note**: The executable includes all dependencies (PyQt6, ReportLab, SQLAlchemy, etc.), which is why it's larger than typical applications.
 
 ### 🐍 Python Package (All Platforms)
 
