@@ -32,16 +32,21 @@ jobs:
       run: |
         pyinstaller KaizenBlitz.spec
     
+    - name: Create ZIP archive
+      run: |
+        Compress-Archive -Path dist/KaizenBlitz -DestinationPath dist/KaizenBlitz-Windows.zip
+      shell: pwsh
+    
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: KaizenBlitz-Windows
-        path: dist/KaizenBlitz.exe
+        path: dist/KaizenBlitz-Windows.zip
     
     - name: Create Release (if tag)
       if: startsWith(github.ref, 'refs/tags/')
       uses: softprops/action-gh-release@v1
       with:
-        files: dist/KaizenBlitz.exe
+        files: dist/KaizenBlitz-Windows.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
