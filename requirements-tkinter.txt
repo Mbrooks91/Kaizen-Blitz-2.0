@@ -1,0 +1,8 @@
+SQLAlchemy==2.0.23
+reportlab==4.0.7
+python-docx==1.1.0
+openpyxl==3.1.2
+Pillow==10.1.0
+pytest==7.4.3
+ttkbootstrap==1.10.1
+pywin32==306
