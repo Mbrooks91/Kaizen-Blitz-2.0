@@ -4,6 +4,21 @@ A comprehensive desktop application for managing Kaizen Blitz (rapid improvement
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
+
+## Download
+
+📦 **Latest Release**: [Download Kaizen Blitz v1.0.0](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.0/kaizen_blitz-1.0.0-py3-none-any.whl)
+
+**Installation from wheel:**
+```bash
+pip install kaizen_blitz-1.0.0-py3-none-any.whl
+kaizen-blitz
+```
+
+**Alternative installation methods:**
+- **Source tarball**: [kaizen_blitz-1.0.0.tar.gz](https://github.com/Mbrooks91/Kaizen-Blitz-2.0/releases/download/v1.0.0/kaizen_blitz-1.0.0.tar.gz)
+- **From source**: See [Installation](#installation) section below
 
 ## Features
 
