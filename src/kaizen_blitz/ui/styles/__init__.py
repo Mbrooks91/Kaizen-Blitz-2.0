@@ -1,5 +1,4 @@
 """Styles package."""
 
-from .colors import Colors
-
-__all__ = ["Colors"]
+# PyQt6 styles temporarily disabled - using tkinter
+__all__ = []
