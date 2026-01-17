@@ -30,23 +30,18 @@ jobs:
     
     - name: Build executable with PyInstaller
       run: |
-        pyinstaller --noconfirm --onedir --windowed --name=KaizenBlitz --noupx --add-data "src;src" --hidden-import=pkgutil --hidden-import=pkg_resources --hidden-import=PyQt6.sip --hidden-import=PyQt6.QtCore --hidden-import=PyQt6.QtGui --hidden-import=PyQt6.QtWidgets --collect-submodules=PyQt6 --collect-binaries=PyQt6 --collect-data=PyQt6 --copy-metadata=PyQt6 run.py
-    
-    - name: Create zip archive
-      run: |
-        Compress-Archive -Path dist/KaizenBlitz -DestinationPath dist/KaizenBlitz-Windows.zip
-      shell: pwsh
+        pyinstaller KaizenBlitz.spec
     
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: KaizenBlitz-Windows
-        path: dist/KaizenBlitz-Windows.zip
+        path: dist/KaizenBlitz.exe
     
     - name: Create Release (if tag)
       if: startsWith(github.ref, 'refs/tags/')
       uses: softprops/action-gh-release@v1
       with:
-        files: dist/KaizenBlitz-Windows.zip
+        files: dist/KaizenBlitz.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,12 +1,34 @@
 # -*- mode: python ; coding: utf-8 -*-
+import sys
+from PyInstaller.utils.hooks import collect_data_files, collect_submodules, collect_dynamic_libs
 
+block_cipher = None
+
+# Collect all PyQt6 data and binaries
+pyqt6_datas = collect_data_files('PyQt6')
+pyqt6_binaries = collect_dynamic_libs('PyQt6')
+pyqt6_hiddenimports = collect_submodules('PyQt6')
+
+# Collect other package data
+reportlab_datas = collect_data_files('reportlab')
+docx_datas = collect_data_files('docx')
 
 a = Analysis(
     ['run.py'],
     pathex=[],
-    binaries=[],
-    datas=[('src', 'src')],
-    hiddenimports=[],
+    binaries=pyqt6_binaries,
+    datas=[
+        ('src', 'src'),
+    ] + pyqt6_datas + reportlab_datas + docx_datas,
+    hiddenimports=[
+        'pkgutil',
+        'pkg_resources',
+        'PyQt6.sip',
+        'PyQt6.QtCore',
+        'PyQt6.QtGui',
+        'PyQt6.QtWidgets',
+        'sqlalchemy.sql.default_comparator',
+    ] + pyqt6_hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -14,7 +36,7 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
-pyz = PYZ(a.pure)
+pyz = PYZ(a.pure, cipher=block_cipher)
 
 exe = EXE(
     pyz,
@@ -35,4 +57,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=None,
 )
